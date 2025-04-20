@@ -1,4 +1,3 @@
-
 import React from "react";
 import { PageContainer } from "@/components/layout/PageContainer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -64,30 +63,30 @@ export default function Profile() {
 
   return (
     <PageContainer>
-      <div className="flex items-center justify-between mb-8">
-        <h1 className="text-2xl font-bold md:text-3xl">Your Profile</h1>
+      <div className="flex items-center justify-between mb-4 md:mb-8">
+        <h1 className="text-xl font-bold md:text-3xl">Your Profile</h1>
         <div className="flex items-center gap-2">
           <LanguageSelector currentLanguage={language} onChange={setLanguage} />
           <Button variant="outline" size="icon">
-            <Settings className="h-5 w-5" />
+            <Settings className="h-4 w-4 md:h-5 md:w-5" />
           </Button>
         </div>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid gap-4 md:gap-6 md:grid-cols-3">
         {/* Profile card */}
         <Card className="md:col-span-1">
-          <CardHeader className="text-center">
-            <div className="flex flex-col items-center">
-              <Avatar className="h-24 w-24 mb-2">
-                <AvatarImage src={userData.avatar} alt={userData.name} />
-                <AvatarFallback className="text-lg bg-agrigreen-100 text-agrigreen-600">
+          <CardHeader className="px-4 py-4 text-center">
+            <div className="flex flex-col items-center space-y-2">
+              <Avatar className="h-20 w-20 md:h-24 md:w-24 mb-1">
+                <AvatarImage src={userData.avatar} alt={userData.name} className="object-cover" />
+                <AvatarFallback className="text-base bg-agrigreen-100 text-agrigreen-600">
                   {userData.name.substring(0, 2).toUpperCase()}
                 </AvatarFallback>
               </Avatar>
-              <CardTitle className="text-xl">{userData.name}</CardTitle>
+              <CardTitle className="text-lg md:text-xl truncate max-w-full">{userData.name}</CardTitle>
               <Badge
-                className="mt-1"
+                className="mt-1 text-xs"
                 variant="outline"
                 style={{ 
                   backgroundColor: "hsl(var(--agrigreen-50))", 
@@ -100,25 +99,25 @@ export default function Profile() {
             </div>
           </CardHeader>
           <CardContent>
-            <div className="space-y-4">
+            <div className="space-y-3">
               <div>
-                <p className="text-sm text-muted-foreground">Location</p>
-                <p>{userData.location}</p>
+                <p className="text-xs text-muted-foreground">Location</p>
+                <p className="text-sm">{userData.location}</p>
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Member Since</p>
-                <p>{userData.joinDate}</p>
+                <p className="text-xs text-muted-foreground">Member Since</p>
+                <p className="text-sm">{userData.joinDate}</p>
               </div>
-              <Separator />
+              <Separator className="my-3" />
               <div>
-                <p className="text-sm text-muted-foreground mb-2">Bio</p>
-                <p className="text-sm">{userData.bio}</p>
+                <p className="text-xs text-muted-foreground mb-1">Bio</p>
+                <p className="text-xs md:text-sm line-clamp-3">{userData.bio}</p>
               </div>
               <div>
-                <p className="text-sm text-muted-foreground mb-2">Crops</p>
-                <div className="flex flex-wrap gap-2">
+                <p className="text-xs text-muted-foreground mb-1">Crops</p>
+                <div className="flex flex-wrap gap-1">
                   {userData.crops.map((crop) => (
-                    <Badge key={crop} variant="secondary">
+                    <Badge key={crop} variant="secondary" className="text-[10px] md:text-xs">
                       {crop}
                     </Badge>
                   ))}
