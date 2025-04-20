@@ -1,0 +1,40 @@
+
+{
+  "colors": {
+    "primary": {
+      "50": "#f2fcE2",
+      "100": "#dcf5b0",
+      "500": "#65A30D",
+      "600": "#4D7C0F"
+    },
+    "secondary": {
+      "50": "#faf3e8",
+      "100": "#f2e0c4",
+      "500": "#A16207",
+      "600": "#854D0E"
+    },
+    "harvest": {
+      "50": "#fef7cd",
+      "100": "#feee9c",
+      "500": "#CA8A04",
+      "600": "#a26e05"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "body": "Inter, sans-serif",
+      "headings": "Inter, sans-serif"
+    },
+    "fontSize": {
+      "small": "0.875rem",
+      "base": "1rem",
+      "large": "1.25rem",
+      "heading": "2rem"
+    }
+  },
+  "borderRadius": {
+    "sm": "0.25rem",
+    "md": "0.5rem",
+    "lg": "1rem"
+  }
+}
