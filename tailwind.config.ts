@@ -52,6 +52,43 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+        // AgriConnect custom colors - earthy palette
+        agrigreen: {
+          50: '#f2fcE2',
+          100: '#dcf5b0',
+          200: '#bde77f',
+          300: '#9ed94e',
+          400: '#84cc28',
+          500: '#65A30D', // Primary green
+          600: '#4D7C0F', // Darker green
+          700: '#3d6410',
+          800: '#2c4a0d',
+          900: '#1b2e08',
+        },
+        earthbrown: {
+          50: '#faf3e8',
+          100: '#f2e0c4',
+          200: '#e6c89d',
+          300: '#d9af76',
+          400: '#ca984f',
+          500: '#A16207', // Primary brown
+          600: '#854D0E', // Darker brown
+          700: '#694011',
+          800: '#4d2f0c',
+          900: '#301d07',
+        },
+        harvest: {
+          50: '#fef7cd',
+          100: '#feee9c',
+          200: '#fce26b',
+          300: '#fbd539',
+          400: '#ecc118',
+          500: '#CA8A04', // Primary yellow
+          600: '#a26e05',
+          700: '#7a5304',
+          800: '#523702',
+          900: '#2a1c01',
+        },
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
