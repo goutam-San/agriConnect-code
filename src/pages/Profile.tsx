@@ -11,7 +11,7 @@ import { Calendar, Clock, FileText, Settings, MessageSquare, Book } from "lucide
 import { LanguageSelector } from "@/components/layout/LanguageSelector";
 
 const userData = {
-  name: "Rajesh Kumar",
+  name: "John Doe", // Changed from "Rajesh Kumar" to "John Doe"
   type: "farmer",
   avatar: "https://i.pravatar.cc/150?img=11",
   location: "Andhra Pradesh, India",
